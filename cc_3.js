@@ -51,6 +51,8 @@ let feedback = [
         console.log(`Rating: ${item.rating}`);
         console.log(`-------------------------`);
     })
+console.log(`-----Adding another Feedback-----`)
+
 feedback.push({ customerName: `David`, feedbackText: `The best tacos I have ever had`, rating: 5 }); // Adds a new feedback to the array
 
 feedback.forEach((item, index) => {
@@ -61,3 +63,21 @@ feedback.forEach((item, index) => {
     console.log(`-------------------------`);
 })
 // Task 4 - End
+
+// Task 5 - Inventory Management Scenario
+let inventory = {
+    itemName: `Laptop`,
+    stockCount: 50,
+    price: 1000,
+    // Method to calculate the total value
+    calculateTotalValue: function() {
+        return this.stockCount * this.price;
+    }
+};
+
+console.log(`Inventory Details:`);
+console.log(`Item Name: ${inventory.itemName}`)
+console.log(`Stock Count: ${inventory.stockCount}`);
+console.log(`Price per Item: $${inventory.price}`);
+console.log(`Total Value of Inventory: $${inventory.calculateTotalValue()}`);
+// Task 5 - End
