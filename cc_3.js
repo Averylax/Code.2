@@ -37,3 +37,27 @@ employees.promotionEligible = employees.performanceScore >= 85; // Checks if the
     console.log(
         `Updated Employee: ${employees.name} is a ${employees.role} with a performance score of ${employees.performanceScore}, work status is ${employees.isActive}, promotion eligbilitiy is ${employees.promotionEligible}.`); // Logs the updated employee
 // Task 3 - End
+
+// Task 4 - Customer Feedback Records Scenario
+let feedback = [
+    { customerName: `Alice`, feedbackText: `Decent Service.`, rating: 3.5 }, // Feedback records
+    { customerName: `Bob`, feedbackText: `Food was great but waiter was slow bringing drinks`, rating: 4.5 }, // Feedback records
+    { customerName: `Charlie`, feedbackText: `Poor Service. Lights to bright and food had to much flavor.`, rating: 2.5 } // Feedback records
+];
+    feedback.forEach((item, index) => {
+        console.log(`Feedback ${index + 1}:`);
+        console.log(`Customer Name: ${item.customerName}`);
+        console.log(`Feedback: ${item.feedbackText}`);
+        console.log(`Rating: ${item.rating}`);
+        console.log(`-------------------------`);
+    })
+feedback.push({ customerName: `David`, feedbackText: `The best tacos I have ever had`, rating: 5 }); // Adds a new feedback to the array
+
+feedback.forEach((item, index) => {
+    console.log(`Feedback ${index + 1}:`);
+    console.log(`Customer Name: ${item.customerName}`);
+    console.log(`Feedback: ${item.feedbackText}`);
+    console.log(`Rating: ${item.rating}`);
+    console.log(`-------------------------`);
+})
+// Task 4 - End
