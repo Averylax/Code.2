@@ -28,14 +28,12 @@ let employees = {
     performanceScore: 80, // Performance score of the employee
     isActive: true // Status of the employee
 };
-    console.log(
-        `Initial Employee: ${employees.name} is a ${employees.role} with a performance score of ${employees.performanceScore}, work status is ${employees.isActive}.`); // Logs the initial employee
+    console.log(`Initial Employee: ${employees.name} is a ${employees.role} with a performance score of ${employees.performanceScore}, work status is ${employees.isActive}.`); // Logs the initial employee
 
 employees.performanceScore += 10; // Adds 20 to the performance score of the employee
 employees.promotionEligible = employees.performanceScore >= 85; // Checks if the employee is eligible for promotion
 
-    console.log(
-        `Updated Employee: ${employees.name} is a ${employees.role} with a performance score of ${employees.performanceScore}, work status is ${employees.isActive}, promotion eligbilitiy is ${employees.promotionEligible}.`); // Logs the updated employee
+    console.log(`Updated Employee: ${employees.name} is a ${employees.role} with a performance score of ${employees.performanceScore}, work status is ${employees.isActive}, promotion eligbilitiy is ${employees.promotionEligible}.`); // Logs the updated employee
 // Task 3 - End
 
 // Task 4 - Customer Feedback Records Scenario
@@ -44,24 +42,10 @@ let feedback = [
     { customerName: `Bob`, feedbackText: `Food was great but waiter was slow bringing drinks`, rating: 4.5 }, // Feedback records
     { customerName: `Charlie`, feedbackText: `Poor Service. Lights to bright and food had to much flavor.`, rating: 2.5 } // Feedback records
 ];
-    feedback.forEach((item, index) => {
-        console.log(`Feedback ${index + 1}:`);
-        console.log(`Customer Name: ${item.customerName}`);
-        console.log(`Feedback: ${item.feedbackText}`);
-        console.log(`Rating: ${item.rating}`);
-        console.log(`-------------------------`);
-    })
+console.log(feedback); // Logs the initial feedback records
 console.log(`-----Adding another Feedback-----`)
-
 feedback.push({ customerName: `David`, feedbackText: `The best tacos I have ever had`, rating: 5 }); // Adds a new feedback to the array
-
-feedback.forEach((item, index) => {
-    console.log(`Feedback ${index + 1}:`);
-    console.log(`Customer Name: ${item.customerName}`);
-    console.log(`Feedback: ${item.feedbackText}`);
-    console.log(`Rating: ${item.rating}`);
-    console.log(`-------------------------`);
-})
+console.log(feedback); // Logs the updated feedback records
 // Task 4 - End
 
 // Task 5 - Inventory Management Scenario
